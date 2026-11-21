@@ -1,0 +1,631 @@
+* {
+    box-sizing: border-box;
+}
+
+.rp-page {
+    min-height: 100vh;
+    padding: 25px;
+    background: #fff7f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #292929;
+}
+
+.rp-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto 25px;
+}
+
+.rp-back-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    color: #f45108;
+    cursor: pointer;
+}
+
+.rp-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.rp-header p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.rp-header-label {
+    margin-left: auto;
+    padding: 9px 15px;
+    border-radius: 20px;
+    background: #fff0e8;
+    color: #f45108;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rp-card {
+    max-width: 1200px;
+    margin: 0 auto 22px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #f0e9e5;
+    border-radius: 17px;
+    box-shadow: 0 5px 20px rgba(60, 30, 10, .035);
+}
+
+.rp-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.rp-section-heading h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0;
+    font-size: 17px;
+}
+
+.rp-section-heading h3 svg {
+    color: #f45108;
+}
+
+.rp-section-heading p {
+    margin: 6px 0 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.rp-primary-btn,
+.rp-outline-btn,
+.rp-cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 11px 15px;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rp-primary-btn {
+    border: 1px solid #f45108;
+    background: #f45108;
+    color: white;
+}
+
+.rp-outline-btn {
+    border: 1px solid #f45108;
+    background: white;
+    color: #f45108;
+}
+
+.rp-cancel-btn {
+    border: 1px solid #ddd;
+    background: white;
+    color: #666;
+}
+
+.rp-profile-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.rp-restaurant-photo {
+    position: relative;
+    width: 145px;
+    height: 145px;
+    min-width: 145px;
+    display: grid;
+    place-items: center;
+    background: #fff0e8;
+    border-radius: 18px;
+    color: #f45108;
+    overflow: hidden;
+}
+
+.rp-restaurant-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rp-restaurant-photo>button {
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #f45108;
+    color: white;
+    cursor: pointer;
+}
+
+.rp-restaurant-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.rp-restaurant-details>h2 {
+    margin: 3px 0 6px;
+    font-size: 23px;
+}
+
+.rp-description {
+    margin: 0 0 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+.rp-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.rp-info-grid span {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #666;
+    font-size: 12px;
+}
+
+.rp-info-grid svg {
+    width: 17px;
+    color: #f45108;
+}
+
+.rp-profile-edit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.rp-profile-edit-grid label,
+.rp-food-form-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rp-profile-edit-grid input,
+.rp-food-form input,
+.rp-food-form select,
+.rp-food-form textarea,
+.rp-category-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.rp-profile-edit-grid input:focus,
+.rp-food-form input:focus,
+.rp-food-form select:focus,
+.rp-food-form textarea:focus,
+.rp-category-form input:focus {
+    border-color: #f45108;
+}
+
+.rp-profile-edit-grid>button {
+    justify-self: start;
+}
+
+.rp-category-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 15px;
+    background: #fff8f4;
+    border-radius: 10px;
+}
+
+.rp-category-form input {
+    flex: 1;
+    min-width: 180px;
+}
+
+.rp-category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.rp-category-chip {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 15px;
+    background: #fff7f2;
+    border: 1px solid #ffeadf;
+    border-radius: 10px;
+    color: #f45108;
+}
+
+.rp-category-chip span {
+    color: #444;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rp-category-chip small {
+    display: grid;
+    place-items: center;
+    min-width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: white;
+    color: #f45108;
+    font-size: 10px;
+}
+
+.rp-food-form {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid #ffe1d2;
+    background: #fffaf7;
+    border-radius: 13px;
+}
+
+.rp-form-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.rp-form-title h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.rp-form-title button {
+    border: none;
+    background: transparent;
+    color: #888;
+    cursor: pointer;
+}
+
+.rp-food-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.rp-food-form-grid textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+.rp-full-width {
+    grid-column: 1 / -1;
+}
+
+.rp-photo-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.rp-upload-box {
+    width: 190px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    border: 2px dashed #f4b99e;
+    border-radius: 12px;
+    background: #fff4ed;
+    color: #f45108;
+    cursor: pointer;
+}
+
+.rp-upload-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rp-upload-box strong {
+    font-size: 12px;
+}
+
+.rp-upload-box small {
+    color: #999;
+    font-size: 10px;
+}
+
+.rp-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.rp-food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.rp-food-card {
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 13px;
+    background: white;
+    transition: .2s ease;
+}
+
+.rp-food-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .07);
+}
+
+.rp-food-image {
+    position: relative;
+    height: 190px;
+    background: #fff0e8;
+}
+
+.rp-food-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rp-no-photo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #f45108;
+}
+
+.rp-no-photo span {
+    font-size: 11px;
+}
+
+.rp-food-type {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: white;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.rp-food-type>span {
+    width: 9px;
+    height: 9px;
+    border: 1.5px solid currentColor;
+    display: inline-block;
+    position: relative;
+}
+
+.rp-food-type.veg {
+    color: #179447;
+}
+
+.rp-food-type.veg>span::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 50%;
+    background: #179447;
+}
+
+.rp-food-type.nonveg {
+    color: #df4141;
+}
+
+.rp-food-type.nonveg>span::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 50%;
+    background: #df4141;
+}
+
+.rp-food-card-content {
+    padding: 15px;
+}
+
+.rp-food-category {
+    color: #f45108;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.rp-food-card-content h4 {
+    margin: 7px 0;
+    font-size: 15px;
+}
+
+.rp-food-card-content>p {
+    min-height: 30px;
+    margin: 0;
+    color: #999;
+    font-size: 11px;
+}
+
+.rp-food-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 14px 0;
+}
+
+.rp-food-price-row>strong {
+    font-size: 18px;
+    color: #292929;
+}
+
+.rp-available-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #777;
+    font-size: 10px;
+}
+
+.rp-available-toggle input {
+    accent-color: #f45108;
+}
+
+.rp-food-actions {
+    display: flex;
+    gap: 9px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+.rp-food-actions button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 9px;
+    border: 0;
+    border-radius: 7px;
+    background: #fff0e8;
+    color: #f45108;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.rp-food-actions button:last-child {
+    background: #fff0f0;
+    color: #df4141;
+}
+
+.rp-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 35px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.rp-footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 11px;
+    padding: 10px;
+}
+
+@media (max-width: 850px) {
+    .rp-food-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .rp-page {
+        padding: 14px;
+    }
+
+    .rp-card {
+        padding: 17px;
+    }
+
+    .rp-header h2 {
+        font-size: 18px;
+    }
+
+    .rp-header-label {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+
+    .rp-profile-content {
+        flex-direction: column;
+    }
+
+    .rp-restaurant-photo {
+        width: 115px;
+        height: 115px;
+        min-width: 115px;
+    }
+
+    .rp-info-grid,
+    .rp-profile-edit-grid,
+    .rp-food-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rp-full-width {
+        grid-column: auto;
+    }
+
+    .rp-food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rp-food-image {
+        height: 210px;
+    }
+
+    .rp-section-heading {
+        align-items: flex-start;
+    }
+
+    .rp-section-heading h3 {
+        font-size: 14px;
+    }
+
+    .rp-section-heading p {
+        font-size: 10px;
+    }
+
+    .rp-primary-btn,
+    .rp-outline-btn {
+        padding: 9px 10px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .rp-category-form {
+        flex-direction: column;
+    }
+}

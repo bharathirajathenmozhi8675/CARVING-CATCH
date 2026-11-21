@@ -1,0 +1,372 @@
+.dp-profile-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #252525;
+}
+
+.dp-profile-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.dp-profile-heading h2 {
+    margin: 0 0 6px;
+    font-size: 24px;
+}
+
+.dp-profile-heading p,
+.dp-profile-section-title p {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.dp-profile-edit-btn,
+.dp-profile-save-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #f45108;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dp-profile-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 13px;
+    padding: 23px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.035);
+}
+
+.dp-profile-section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.dp-profile-section-title>svg {
+    color: #f45108;
+    flex-shrink: 0;
+}
+
+.dp-profile-section-title h3 {
+    margin: 0 0 5px;
+    font-size: 17px;
+}
+
+.dp-profile-person {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #eee;
+}
+
+.dp-profile-photo {
+    width: 88px;
+    height: 88px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff0e8;
+    color: #f45108;
+    overflow: hidden;
+}
+
+.dp-profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dp-profile-photo button {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 29px;
+    height: 29px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #f45108;
+    color: white;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.dp-profile-person h3 {
+    margin: 0 0 5px;
+    font-size: 19px;
+}
+
+.dp-profile-person p {
+    margin: 0 0 9px;
+    color: #888;
+    font-size: 13px;
+}
+
+.dp-profile-online,
+.dp-profile-offline {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.dp-profile-online {
+    color: #16884c;
+    background: #e6f8ed;
+}
+
+.dp-profile-offline {
+    color: #777;
+    background: #eee;
+}
+
+.dp-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.dp-profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    color: #555;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dp-profile-input {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    background: #fafafa;
+    color: #f45108;
+}
+
+.dp-profile-input:focus-within {
+    border-color: #f45108;
+    background: white;
+}
+
+.dp-profile-input input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 13px;
+}
+
+.dp-profile-input input[readonly] {
+    cursor: default;
+}
+
+.dp-document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dp-document-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px;
+    border: 1px solid #eee;
+    border-radius: 9px;
+}
+
+.dp-document-icon {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #fff0e8;
+    color: #f45108;
+}
+
+.dp-document-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.dp-document-info strong {
+    font-size: 13px;
+}
+
+.dp-document-info small {
+    color: #888;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+.dp-document-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #16884c;
+    font-size: 11px;
+}
+
+.dp-document-upload {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 12px;
+    border: 1px solid #f45108;
+    border-radius: 7px;
+    background: white;
+    color: #f45108;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dp-document-upload:hover {
+    background: #fff2eb;
+}
+
+.dp-document-note {
+    display: block;
+    margin-top: 13px;
+    color: #999;
+    font-size: 11px;
+}
+
+.dp-availability-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.dp-availability-row strong {
+    font-size: 14px;
+}
+
+.dp-availability-row p {
+    margin: 6px 0 0;
+    color: #888;
+    font-size: 12px;
+}
+
+.dp-availability-toggle {
+    width: 51px;
+    height: 28px;
+    padding: 3px;
+    border: none;
+    border-radius: 30px;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.dp-availability-toggle span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.dp-availability-toggle.active {
+    background: #19a765;
+}
+
+.dp-availability-toggle.active span {
+    transform: translateX(23px);
+}
+
+.dp-profile-save-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dp-profile-save-btn {
+    padding: 12px 22px;
+}
+
+.dp-profile-footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 11px;
+    padding: 10px;
+}
+
+@media (max-width: 650px) {
+    .dp-profile-card {
+        padding: 16px;
+    }
+
+    .dp-profile-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .dp-profile-heading {
+        align-items: flex-start;
+    }
+
+    .dp-profile-heading h2 {
+        font-size: 20px;
+    }
+
+    .dp-profile-edit-btn {
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+    .dp-document-card {
+        flex-wrap: wrap;
+    }
+
+    .dp-document-info {
+        flex-basis: calc(100% - 65px);
+    }
+
+    .dp-document-upload {
+        margin-left: 56px;
+    }
+}
+
+@media (max-width: 380px) {
+    .dp-profile-person {
+        align-items: flex-start;
+    }
+
+    .dp-profile-photo {
+        width: 68px;
+        height: 68px;
+    }
+}
